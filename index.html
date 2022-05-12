@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>                                            
+        <meta></meta>
+        <title><h1>Моя страница</h1></title>
+        <!--Дата время-->
+        <h2>
+        <div id="qwe"></div>
+        <script type="text/javascript">
+            function clock() {
+                var d = new Date();
+                var str_date = d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear()+"<br>"+(d.getHours()+1)+":"+d.getMinutes()+":"+d.getSeconds()+"";
+                document.getElementById("qwe").innerHTML = str_date;
+                setTimeout("clock()", 1);
+            }
+        </script>
+        <script type="text/javascript">
+            clock();
+        </script>
+        </h2>
+        <link rel="stylesheet" href="381.css">  <!--таблица CSS-->
+    </head>
+    <!--вставляем фон внутpь тега <body>-->     
+    <body>
+        
+        <p id="demo"></p>
+        <div><a href="#about">Обо мне</a></div>
+        <div><a href="#hobby">Увлечения</a></div>
+        <div><a href="#etc">Дополнительно</a></div>
+
+        <!-- Мой комментарий -->
+        <div id="about">
+            <br><br>
+        </div>
+        <hr >
+        <div id="hobby">
+            <h2>Увлечения</h2>
+            <ol>
+                <li><p>'Электроника'</p></li>
+                <ol type="A">
+                    <li>Системы безопасности</li>
+                    <li>3Д моделирование</li>
+                    </li>
+                </ol>
+                <li>Автомобили</li>
+                <li>Сварочное дело</li>
+            </ol>
+        <div>
+                <h2>О бо мне</h2>
+                 <p>Родился 11.07.1982г
+                     Женат, двое детей
+                 </p>
+             </div>
+             <HR>
+                <!--подчёркивание-->
+             <PRE><big><b> Папа, с праздником тебя </big</b>
+                <small>С 23 Февраля!
+                Поздравляю от души,
+                Счастья, мира и любви!
+                Будь здоров, живи всегда,
+                Знай, что я люблю тебя.
+                Пусть исполнятся мечты,
+                Самый лучший, папа, ты!</small>
+                </PRE>
+                <div id="Сергей">
+                    <table border="5" bordercolor="black" cellpabbing="10">
+                        <!--команда таблици-->
+                <tr>
+                    <!--правки в теги делаются в нутри тегов пример align="center"-->
+                    <td><img src="../Страница/1.jpg" height="30%" width="30%"></td>
+                    <td><img src="../Страница/3.jpg" height="40%" width="40%"></td>
+                </tr>
+                <tr>
+                    <td><img src="../Страница/2.jpeg"height="40%" width="40%"></td>
+                    <td><img src="../Страница/4.jpg" height="40%" width="40%"></td>
+                </tr>
+            </table>
+            </div>
+            <br><br>
+        <footer>
+            <div id="etc"></div>
+            <a href="https://vk.com/id284956431"><img src="../project0001/Страница/7.jpg" height="100" width="100"></a>
+        </footer>
+    </div>
+    </body>
+
+
+
+
+</html>
